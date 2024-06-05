@@ -1,0 +1,11 @@
+<h1>Practice</h1>
+<input type="text" #search>
+
+<div class="container">
+    @for(item of users; track item){
+      <div class="user-item">
+        <img [src]="item.avatar_url" alt="">
+        <h4>{{item.login}}</h4>
+      </div>
+    }
+</div>

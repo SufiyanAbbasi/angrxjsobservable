@@ -1,0 +1,38 @@
+/* Container div for the user list */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between each user item */
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Individual user item container */
+  .user-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and the username */
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around each user item */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for a card effect */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* User avatar image */
+  .user-item img {
+    width: 50px; /* Size of the avatar */
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+  }
+  
+  /* User username */
+  .user-item h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
