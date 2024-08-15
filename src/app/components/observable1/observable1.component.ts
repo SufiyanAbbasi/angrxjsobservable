@@ -29,7 +29,7 @@ export class Observable1Component {
     console.log("just before subscribe ");
 
     //observer
-    observable.subscribe({
+ this.mySubscription=   observable.subscribe({
       next(x) {
         console.log('got value ' + x);
       },
@@ -44,6 +44,7 @@ export class Observable1Component {
     })
     console.log("Just after subscribe");
   }
+
 
   ngOnDestroy(): void {
     // Unsubscribe from the observable to prevent logging when navigating away
